@@ -1,12 +1,12 @@
 /* Basic Str */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: #f5efe6;
+    background: #F5EFE6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,13 +16,13 @@ body {
 }
 
 .container {
-    background-color: white;
+    background: white;
     border-radius: 1rem;
     box-shadow:0 10px 30px #eea352;
     width: 100%;
     max-width: 600px;
     overflow: hidden;
-    position: absolute;
+    position: relative;
 }
 
 .screen {
@@ -57,6 +57,7 @@ body {
     line-height: 1.4;
 }
 
+
 .quiz-info {
     display: flex;
     justify-content: space-around;
@@ -71,27 +72,29 @@ body {
     margin-bottom: 25px;
 }
 
+
 .progress-bar {
     height: 10px;
-    background-color: #eea352;
+    background-color: #d5d2ce;
     border-radius: 5px;
     overflow: hidden;
     margin-top: 20px;
 }
 
-.progress {
+.progress { 
     height: 100%;
     background-color: #ed912e;
     width: 0;
+    transition: width 0.3s ease-in-out;
+ }
 
-}
 
-/* Result Screen */
+ /* Result Screen */
 
-#result-screen h1 {
+ #result-screen h1 {
     color: #ed912e;
     margin-bottom: 20px;
-}
+ }
 
 .result-info {
     background-color: #F8F0E5;
@@ -108,11 +111,11 @@ body {
 #result-message {
     font-size: 1.5rem;
     color: #f08513;
-    font-weight: 600;
+    font-weight: 600;   
 }
 
 button {
-    background-color: #f08f26;
+    background-color: #f0a04a;
     color: white;
     border: none;
     border-radius: 10px;
@@ -120,4 +123,5 @@ button {
     font-size: 1.1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
 }
