@@ -14,7 +14,7 @@ const resultMessage = document.getElementById("result-message");
 const restartButton = document.getElementById("restart-btn");
 
 const quizQuestions = [
-    {
+  {
     question: "What is the capital of France?",
     answers: [
       { text: "London", correct: false },
@@ -72,37 +72,92 @@ startButton.addEventListener("click", startQuiz);
 restartButton.addEventListener("click", restartQuiz);
 
 function startQuiz() {
-    // reset
-    currentQuestionIndex = 0;
-    score = 0;
-    scoreSpan.textContent = 0;
+  currentQuestionIndex = 0;
+  score = 0;
+  scoreSpan.textContent = 0;
 
-    startScreen.classList.remove("active");
-    quizScreen.classList.add("active");
+  startScreen.classList.remove("active");
+  resultScreen.classList.remove("active");
+  quizScreen.classList.add("active");
+
+  showQuestion();
 }
 
 function showQuestion() {
-    // reset state
-    answersDisabled = false;
+  answersDisabled = false;
+  const currentQuestion = quizQuestions[currentQuestionIndex];
 
-    const currentQuestion = quizQuestions[currentQuestionIndex]
+  currentQuestionSpan.textContent = currentQuestionIndex + 1;
+  questionText.textContent = currentQuestion.question;
 
-    currentQuestionSpan.textContent = currentQuestionIndex + 1;
+  const progressPercent = ((currentQuestionIndex) / quizQuestions.length) * 100;
+  progressBar.style.width = progressPercent + "%";
 
-    const progressBar = (currentQuestionIndex / quizQuestions.length) * 100;
-    progressBar.style.width = progressPercent + "%";
+  answerContainer.innerHTML = "";
 
-    answerContainer.innerHTML = "";
+  currentQuestion.answers.forEach((answer) => {
+    const button = document.createElement("button");
+    button.textContent = answer.text;
+    button.classList.add("answer-btn");
+    button.dataset.correct = answer.correct;
+    button.addEventListener("click", selectAnswer);
+    answerContainer.appendChild(button);
+  });
+}
 
-    currentQuestion.answers.map(()=>{
-        const button = document.createElement("button");
-        button.textContent = answers.text;
-        button.classList.add("answer-btn");
+function selectAnswer(event) {
+  if (answersDisabled) return;
+  answersDisabled = true;
 
-        button.dataset.correct = answerContainer.correct;
+  const selectedButton = event.target;
+  const correct = selectedButton.dataset.correct === "true";
 
-        button.addEventListener("click", selectAnswer);
+  if (correct) {
+    score++;
+    scoreSpan.textContent = score;
+    selectedButton.style.backgroundColor = "#4CAF50";
+  } else {
+    selectedButton.style.backgroundColor = "#f44336";
+  }
 
-        answerContainer.appendChild(button);
-    })
+  // Show correct answers
+  Array.from(answerContainer.children).forEach((btn) => {
+    if (btn.dataset.correct === "true") {
+      btn.style.backgroundColor = "#4CAF50";
+    }
+    btn.disabled = true;
+  });
+
+  // Delay before moving to next question
+  setTimeout(() => {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < quizQuestions.length) {
+      showQuestion();
+    } else {
+      showResults();
+    }
+  }, 1000);
+}
+
+function showResults() {
+  quizScreen.classList.remove("active");
+  resultScreen.classList.add("active");
+
+  finalScoreSpan.textContent = score;
+
+  // Optional message
+  if (score === quizQuestions.length) {
+    resultMessage.textContent = "Perfect Score! 🎉";
+  } else if (score >= quizQuestions.length / 2) {
+    resultMessage.textContent = "Good Job!! 🥳";
+  } else {
+    resultMessage.textContent = "Keep Practicing! 💪";
+  }
+
+  progressBar.style.width = "100%";
+}
+
+function restartQuiz() {
+  resultScreen.classList.remove("active");
+  startScreen.classList.add("active");
 }
