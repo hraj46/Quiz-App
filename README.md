@@ -11,8 +11,16 @@ A simple and interactive quiz game built with HTML, CSS, and JavaScript. It chal
 - Dynamic feedback based on your performance
 - Restart functionality
 
-📸 Screenshots
-Start Screen	Quiz Screen	Result Screen
+---
+
+## 📸 Screenshots
+### Start Screen 
+
+---
+### Quiz Screen	
+
+---
+### Result Screen
 Replace the above image URLs with real screenshots if uploading to GitHub.
 
 🛠️ Tech Stack
