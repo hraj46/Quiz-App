@@ -15,13 +15,17 @@ A simple and interactive quiz game built with HTML, CSS, and JavaScript. It chal
 
 ## 📸 Screenshots
 ### Start Screen 
+<img width="1903" height="1014" alt="Screenshot (214)" src="https://github.com/user-attachments/assets/04dbbc0b-8068-488e-a5cd-762578f838aa" />
 
 ---
 ### Quiz Screen	
+<img width="1920" height="1014" alt="Screenshot (215)" src="https://github.com/user-attachments/assets/7a8dcbc6-3752-405b-958b-e2243b2715b5" />
 
 ---
 ### Result Screen
-Replace the above image URLs with real screenshots if uploading to GitHub.
+<img width="1920" height="1014" alt="Screenshot (216)" src="https://github.com/user-attachments/assets/5cbb984f-0ff0-41b4-b25f-dab098b60c09" />
+
+---
 
 🛠️ Tech Stack
 HTML – Structure of the app
