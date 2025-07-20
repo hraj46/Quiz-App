@@ -4,17 +4,12 @@ A simple and interactive quiz game built with HTML, CSS, and JavaScript. It chal
 ---
 
 ## 🚀 Features
-Clean and responsive UI
-
-Multiple choice questions
-
-Score tracking
-
-Progress bar indicator
-
-Dynamic feedback based on your performance
-
-Restart functionality
+- Clean and responsive UI
+- Multiple choice questions
+- Score tracking
+- Progress bar indicator
+- Dynamic feedback based on your performance
+- Restart functionality
 
 📸 Screenshots
 Start Screen	Quiz Screen	Result Screen
