@@ -41,8 +41,8 @@ A simple and interactive quiz game built with HTML, CSS, and JavaScript. It chal
 
 ---
 
-📂 Folder Structure
-📁 quiz-game/
+## 📂 Folder Structure
+### 📁 quiz-game/
 ├── index.html
 ├── style.css
 └── script.js
