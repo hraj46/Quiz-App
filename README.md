@@ -43,18 +43,24 @@ A simple and interactive quiz game built with HTML, CSS, and JavaScript. It chal
 
 ## 📂 Folder Structure
 ### 📁 quiz-game/
-├── index.html
-├── style.css
-└── script.js
-🧑‍💻 Getting Started
-Clone the repository:
+- index.html
+- style.css
+- script.js
 
+---
+
+## 🧑‍💻 Getting Started
+#### 1.Clone the repository:
+```
 git clone https://github.com/your-username/quiz-game.git
-Open the folder in your code editor.
+```
+#### 2.Open the folder in your code editor.
 
-Open index.html in your browser.
+#### 3.Open index.html in your browser.
 
-No dependencies or build tools required!
+- No dependencies or build tools required!
+
+---
 
 🔄 Customization
 Want to add your own questions?
