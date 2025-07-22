@@ -27,17 +27,19 @@ A simple and interactive quiz game built with HTML, CSS, and JavaScript. It chal
 
 ---
 
-🛠️ Tech Stack
-HTML – Structure of the app
+## 🛠️ Tech Stack
+- HTML – Structure of the app
+- CSS – Styling and layout
+- JavaScript – Logic and interactivity
 
-CSS – Styling and layout
+---
 
-JavaScript – Logic and interactivity
+## 🧠 Questions Covered
+- General knowledge (geography, science, tech, etc.)
 
-🧠 Questions Covered
-General knowledge (geography, science, tech, etc.)
+- 5 preset questions (customizable in script.js)
 
-5 preset questions (customizable in script.js)
+---
 
 📂 Folder Structure
 📁 quiz-game/
