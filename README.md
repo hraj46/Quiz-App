@@ -62,11 +62,11 @@ git clone https://github.com/your-username/quiz-game.git
 
 ---
 
-🔄 Customization
+## 🔄 Customization
 Want to add your own questions?
 
-Open script.js and modify the quizQuestions array:
-
+- Open script.js and modify the quizQuestions array:
+```
 const quizQuestions = [
   {
     question: "Your custom question?",
@@ -78,14 +78,17 @@ const quizQuestions = [
   },
   ...
 ];
-📌 To-Do (Optional Enhancements)
-Add timer for each question
+```
 
-Allow user to choose quiz category or difficulty
+---
 
-Save scores using local storage
+## 📌 To-Do (Optional Enhancements)
+- Add timer for each question
+- Allow user to choose quiz category or difficulty
+- Save scores using local storage
+- Add animations or sound effects
 
-Add animations or sound effects
+---
 
-📃 License
+## 📃 License
 This project is open-source and available under the MIT License.
