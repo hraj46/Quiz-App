@@ -50,11 +50,11 @@ A simple and interactive quiz game built with HTML, CSS, and JavaScript. It chal
 ---
 
 ## 🧑‍💻 Getting Started
-#### 1.Clone the repository:
+#### 1. Clone the repository:
 ```
 git clone https://github.com/your-username/quiz-game.git
 ```
-#### 2.Open the folder in your code editor.
+#### 2. Open the folder in your code editor.
 
 #### 3.Open index.html in your browser.
 
